@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "create-react-app": "^5.0.1",
+    "react-router-dom": "^6.4.2",
     "spa": "^0.3.4"
   }
 }
