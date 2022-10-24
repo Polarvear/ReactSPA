@@ -24,7 +24,7 @@ const Profile = () => {
           <p>{profile.dsecription}</p>
         </div>
       ) : (
-        <p>존재하지 않는 프로필입니다</p>
+        <p>존재하지 않는 프로필입니다.</p>
       )}
     </div>
   );
