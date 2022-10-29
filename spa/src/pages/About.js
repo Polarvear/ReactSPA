@@ -7,14 +7,22 @@ const About = () => {
   const mode = searchParams.get("mode");
 
   const onToggleDetail = () => {
-    setSearchParams({});
+    setSearchParams({ mode, detail: detail === "true" ? false : true });
+  };
+
+  const onIncreaseMode = () => {
+    const nextMode = mode === null ? 1 : parseInt(mode) + 1;
+    searchParams({ mode: nextMode, detail });
   };
 
   return (
     <div>
       <h1>소개</h1>
       <p>라우터 사용 프로젝트</p>
-      <p>쿼리스트링: {location.search}</p>
+      <p>detail: {detail}</p>
+      <p>mode: {mode}</p>
+      <button onClick={onToggleDetail}>Toggle detail</button>
+      <button onClick={onIncreaseMode}>Mode + 1</button>
     </div>
   );
 };
