@@ -17,7 +17,7 @@ const Profile = () => {
 
   return (
     <div>
-      <h1>사용자 프로필</h1>
+      <h1>사용자 프로필 보여주기</h1>
       {profile ? (
         <div>
           <h2>{profile.name}</h2>
