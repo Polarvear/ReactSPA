@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <div>
-      <header style={{ background: "lightgray", padding: 16, fontSize: 24 }}>
+      <header style={{ background: "lightgray", padding: 16, fontSize: 25 }}>
         Header
       </header>
       <main>
